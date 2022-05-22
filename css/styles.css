@@ -7,17 +7,21 @@
   --accent: #2196f3;
   --secondaryacc: #188ce8;
   --footeraddress: rgba(255, 255, 255, 0.6);
+  --primarybg: #fff;
   --secondarybg: #2f303a;
   --whyaretheresomanycolorsaaaagggghh: #f5f4fa;
+  --studiomain: #000;
+  --studiosecond: #fff;
+  --trietaryacc: #fff;
 }
 
 /* Global Styles */
 body {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--primarytext);
-  background: white;
+  background: var(--primarybg);
 }
 
 .header-front {
@@ -25,7 +29,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .list {
@@ -41,7 +44,6 @@ body {
 
 .head {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -52,12 +54,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .logo.head {
-  color: black;
+  color: var(--studiomain);
 }
 
 .logo-web {
@@ -99,8 +100,6 @@ body {
   background: var(--accent);
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -126,16 +125,12 @@ body {
 
 .bene-item > h3 {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .bene-item > p {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondarytext);
 }
 
@@ -151,7 +146,7 @@ body {
 }
 
 .team-card {
-  background: white;
+  background: var(--primarybg);
 }
 
 .team-card > h3 {
@@ -159,14 +154,12 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-card > p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondarytext);
 }
 
@@ -177,7 +170,7 @@ body {
 }
 
 .logo.foot {
-  color: white;
+  color: var(--studiosecond);
 }
 
 .foot-add {
@@ -185,14 +178,12 @@ body {
 }
 
 .footer-address {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--footeraddress);
 }
 
 .white {
-  color: white;
+  color: var(--trietaryacc);
 }
 
 .foot .link:hover,
@@ -211,14 +202,11 @@ body {
   background: var(--whyaretheresomanycolorsaaaagggghh);
   width: 128px;
   height: 38px;
-  left: 576px;
-  top: 174px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
 }
 
@@ -226,7 +214,7 @@ body {
 .button:focus,
 .button.selected {
   background: var(--accent);
-  color: white;
+  color: var(--studiosecond);
 }
 
 .project-head {
@@ -239,6 +227,5 @@ body {
 .project-desc {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondarytext);
 }
